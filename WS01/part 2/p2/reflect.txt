@@ -1,0 +1,12 @@
+Name: Masoud Torkian
+Student Number: 159042191
+Email: Mtorkian@myseneca.ca
+Section: ZBB
+Workshop: 1  Reflection
+=================================================================================================================================
+In this workshop i was able to learn and practice accepting arguments from command line and have them as conditions
+for running my program then setup a guard for my header file since it was called twice and i didnt want to have
+duplicate declaration of my class and also i learnt ho to define a variable with a scope of a function and have it 
+live until the program ends (static).i think the most trublesome section was the copy assignment and assignment 
+operators since it was doing a shallow copy and assigning the pointers to same address so the archive and current
+event had same address so when destructor deleted one both were gone and had to implement them.
