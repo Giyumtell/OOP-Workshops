@@ -1,0 +1,11 @@
+Name: Masoud Torkian
+Student Number: 159042191
+Email: Mtorkian@myseneca.ca
+Section: ZBB
+Workshop: 2  Reflection
+=================================================================================================================================
+In this workshop i was able to practice allocating memory using std::string to recieve any amount of strings from a file
+and store it in memory then i implemented the rule of 3 and had to implement the copy constructor and assignment constructor
+to be able to copy the data and have no memory leak and then i could see how long does it take for copy and assignment to
+process data and it actually took some time! then after implementing move semantics which moves out data instead of copying
+it using Rvalue, it took way less to do the same task!
