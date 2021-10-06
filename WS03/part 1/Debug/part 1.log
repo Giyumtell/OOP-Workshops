@@ -1,0 +1,16 @@
+﻿  w3_p2.cpp
+E:\School\semester 3\OOP\OOP-Workshops\WS03\part 1\SetSummable.h(12,1): error C2664: 'sdds::PairSummable<int,std::string>::PairSummable(const sdds::PairSummable<int,std::string> &)': cannot convert argument 1 from 'const std::string' to 'const sdds::PairSummable<int,std::string> &'
+E:\School\semester 3\OOP\OOP-Workshops\WS03\part 1\SetSummable.h(12,1): message : Reason: cannot convert from 'const std::string' to 'const sdds::PairSummable<int,std::string>'
+E:\School\semester 3\OOP\OOP-Workshops\WS03\part 1\SetSummable.h(12,11): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+E:\School\semester 3\OOP\OOP-Workshops\WS03\part 1\PairSummable.h(43,1): message : see declaration of 'sdds::PairSummable<int,std::string>::PairSummable'
+E:\School\semester 3\OOP\OOP-Workshops\WS03\part 1\SetSummable.h(11): message : while compiling class template member function 'T sdds::SetSummable<25,T>::accumulate(const std::string &) const'
+          with
+          [
+              T=sdds::PairSummable<int,std::string>
+          ]
+E:\School\semester 3\OOP\OOP-Workshops\WS03\part 1\w3_p2.cpp(115): message : see reference to function template instantiation 'T sdds::SetSummable<25,T>::accumulate(const std::string &) const' being compiled
+          with
+          [
+              T=sdds::PairSummable<int,std::string>
+          ]
+E:\School\semester 3\OOP\OOP-Workshops\WS03\part 1\w3_p2.cpp(78): message : see reference to class template instantiation 'sdds::SetSummable<25,sdds::PairSummable<int,std::string>>' being compiled
