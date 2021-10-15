@@ -1,0 +1,10 @@
+Name: Masoud Torkian
+Student Number: 159042191
+Email: Mtorkian@myseneca.ca
+Section: ZBB
+Workshop: 4  Reflection
+=================================================================================================================================
+In this workshop i was able to practice allocating memory For pointer Especially for an array of pointers and how to uase the same 
+block of memory and using it's address then i had to use the rule of five and implement destructor, copy constructor,copy assignment
+move constructor and move assignment for two of the modules and then i learned how to manage that memory for allocationg and
+deallocating and also it was a good example for relations like aggression.
