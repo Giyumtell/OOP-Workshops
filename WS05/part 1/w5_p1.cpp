@@ -35,6 +35,23 @@ int main(int argc, char** argv)
 		//       - lines that start with "#" are considered comments and should be ignored
 		//       - if the file cannot be open, print a message to standard error console and
 		//                exit from application with error code "AppErrors::CannotOpenFile"
+		std::ifstream file(argv[1]);
+		if (!file)
+		{
+			std::cerr << "ERROR: Cannot open file [" << argv[1] << "].\n";
+			exit(AppErrors::CannotOpenFile);
+		}
+		std::string temp;
+		int k = 0;
+		while (std::getline(file, temp))
+		{
+			if (temp[0]!='#')
+			{
+				Book tempp(temp);
+				library[k] = tempp;
+				k++;
+			}
+		}
 	}
 	else
 	{
@@ -51,28 +68,47 @@ int main(int argc, char** argv)
 	//            and save the new price in the book object
 	//       - if the book was published in UK between 1990 and 1999 (inclussive),
 	//            multiply the price with "gbpToCadRate" and save the new price in the book object
-
+	auto fixer = [=](Book& obj)
+	{
+		if (obj.country() == "US")
+		{
+			obj.price() *= usdToCadRate;
+		}
+		if (obj.country() == "UK" && obj.year()>=1990 && obj.year() <= 1999)
+		{
+			obj.price() *= gbpToCadRate;
+		}
+	};
 
 
 	std::cout << "-----------------------------------------\n";
 	std::cout << "The library content\n";
 	std::cout << "-----------------------------------------\n";
 	// TODO: iterate over the library and print each book to the screen
-
+	for (size_t i = 0; i < 7; i++)
+	{
+		std::cout << library[i] << std::endl;
+	}
 
 
 	std::cout << "-----------------------------------------\n\n";
 
 	// TODO: iterate over the library and update the price of each book
 	//         using the lambda defined above.
-
+	for (size_t i = 0; i < 7; i++)
+	{
+		fixer(library[i]);
+	}
 
 
 	std::cout << "-----------------------------------------\n";
 	std::cout << "The library content (updated prices)\n";
 	std::cout << "-----------------------------------------\n";
 	// TODO: iterate over the library and print each book to the screen
-
+	for (size_t i = 0; i < 7; i++)
+	{
+		std::cout << library[i] << std::endl;
+	}
 
 
 	std::cout << "-----------------------------------------\n";

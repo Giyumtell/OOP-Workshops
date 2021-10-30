@@ -1,0 +1,11 @@
+Name: Masoud Torkian
+Student Number: 159042191
+Email: Mtorkian@myseneca.ca
+Section: ZBB
+Workshop: 5  Reflection
+=================================================================================================================================
+In this workshop, I was able to practice defining template classes and allocate and deallocate memory for those templated
+ classes. then I learnt how to use pointers to functions and design function objects after this I had to code a lambda 
+expression to modify a value inside my class and I think it is very useful and handy.
+I still need to study the member function that receives the address of a callback function because it is still confusing
+ to me and finally implementing error handling and managing exceptions was also a good practice to make a crash-free app.
