@@ -1,0 +1,11 @@
+Name: Masoud Torkian
+Student Number: 159042191
+Email: Mtorkian@myseneca.ca
+Section: ZBB
+Workshop: 6  Reflection
+=================================================================================================================================
+in this workshop i was able to use Vectors to store my data and iterate through it.
+after allocating memory i had to deallocate that memory because vector is only a container for the addresses of those objects
+and it requires deleting to prevent memory leak.
+we could have a checker or validator that goes through all the data and checks for wrong records and throws correct exceptions
+using asterisk determines that we want a container for pointers not the actual data

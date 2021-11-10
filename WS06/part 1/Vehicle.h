@@ -5,7 +5,7 @@
 #define SDDS_VEHICLE_H
 #include <iostream>
 #include <string>
-
+#include<exception>
 namespace sdds
 {
 	class Vehicle
