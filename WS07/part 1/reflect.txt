@@ -1,0 +1,13 @@
+Name: Masoud Torkian
+Student Number: 159042191
+Email: Mtorkian@myseneca.ca
+Section: ZBB
+Workshop: 7  Reflection
+=================================================================================================================================
+in this workshop i was able to use Vectors and list to store data and use iterators and automatic iteration to search and
+sort my data.
+i used vector to store the address of each struct that i created for my songs and list to hold those songs. then i used for
+loop with iteretor because the size of my vector changes through the program and then i used another loop (for auto &i:x) 
+to find an artist. then i used std::sort with lambda expression to sort the vector using a value inside structure.
+using stl loops makes it way easier to manage my data rather than manualy doing it and i dont have to think about the size of
+my arrays.

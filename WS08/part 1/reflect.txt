@@ -1,0 +1,11 @@
+Name: Masoud Torkian
+Student Number: 159042191
+Email: Mtorkian@myseneca.ca
+Section: ZBB
+Workshop: 8  Reflection
+=================================================================================================================================
+In this week's workshop i was able to use both Raw pointers and smart pointers to implement same functions like += operator
+and have a hands on experience on how easier the implementation of smart pointers are and how easy it is to manage memory
+using them.
+for example in my raw pointer += operator i had to manually call the destructor for first object after moving it to the list
+but in the smart pointer syntax all that job was done automatically without any worries.
