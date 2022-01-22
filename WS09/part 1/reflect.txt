@@ -1,0 +1,15 @@
+Name: Masoud Torkian
+Student Number: 159042191
+Email: Mtorkian@myseneca.ca
+Section: ZBB
+Workshop: 9  Reflection
+=================================================================================================================================
+When you want to work with data the way it is instead of a text file and have it stored on memory without any change you can use
+binary files. it allowed me to store the file which was encrypted on my memory without any interfere from the operating system
+and have it restored the way it is. to do so I opened my file as a binary file and allocated memory for it then stored it bit
+by bit.
+binding function to a wrapper with the right arguments helped me to split my decode/encoder work into multiple threads and made
+everything clean and simple.
+to use multiple threads in this workshop I split my manually allocated memory into 4 chunks then I split the binary data also
+to 4 chunks and bound each part as an argument to my wrapper using std::bind with converter function then made 4 threads and
+called each bind with one thread then waited for all of them to finish by using join().
